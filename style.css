@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 100px;
+    font-family: Helvetica, sans-serif;
+}
+
+button {
+     margin-top: 1rem;
+     font-family: Helvetica, sans-serif;
+}
+
+::-webkit-input-placeholder, ::-moz-placeholder, ::-ms-input-placeholder, ::-moz-placeholder {
+    font-family: Helvetica, sans-serif;
+  }
+  
+
+
