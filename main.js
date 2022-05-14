@@ -41,8 +41,6 @@ function getStory() {
     return;
   }
 
-  
-
   const data = {
       prompt: `${inputString}`,
       temperature: 0.5,

@@ -3,8 +3,12 @@ body {
     box-sizing: border-box;
     text-align: center;
     padding-top: 2rem;
-    font-family: Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background: white;
+}
+
+.content {
+    max-width: 50%;
 }
 
 button {
@@ -19,7 +23,6 @@ button {
 }
 
 ::-webkit-input-placeholder, ::-moz-placeholder, ::-ms-input-placeholder, ::-moz-placeholder {
-    font-family: Helvetica, sans-serif;
     font-size: 2rem;
     color: white;
   }
@@ -30,6 +33,7 @@ button {
 
   h1 {
       font-size: 3rem;
+      text-align: left;
   }
 
   ul {
@@ -59,6 +63,8 @@ button {
   textarea {
       padding: 1rem;
       font-size: 1.2rem;
+      width: 100%;
+      min-height: 5rem;
   }
 
   h3 {
@@ -81,5 +87,10 @@ button {
     display: flex;
 }
 
+.heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
 
 
