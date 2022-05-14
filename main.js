@@ -1,5 +1,10 @@
 document.querySelector('button').addEventListener('click', getStory);
 document.getElementById('clear').addEventListener('click', clearAnswers);
+document.querySelector("button").addEventListener('mouseout', clearPlaceholder);
+
+  function clearPlaceholder() {
+    document.querySelector("textarea").placeholder = "Ask a question or submit a request (eg. Tell me a story about...)";
+  }
 
 let keyNum = 0;
 let valueNum = 0;
@@ -32,9 +37,11 @@ function getStory() {
   let inputString = document.querySelector('textarea').value;
 
   if (inputString === "") {
-    document.querySelector("textarea").placeholder = "Please ask a question or give me a request...";
+    document.querySelector("textarea").placeholder = "You haven't typed anything in yet!";
     return;
   }
+
+  
 
   const data = {
       prompt: `${inputString}`,
