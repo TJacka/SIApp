@@ -1,8 +1,40 @@
 document.querySelector('button').addEventListener('click', getStory);
+document.getElementById('clear').addEventListener('click', clearAnswers);
+
+let keyNum = 0;
+let valueNum = 0;
+
+for (let i = 0; i < localStorage.length; i++) {
+  console.log(localStorage.getItem(localStorage.key(i)))
+  keyNum++;
+
+  list.innerHTML += 
+      `<li>
+        <div class="prompt--div">
+          <h3 class="prompts">Prompt:</h3>
+          <h3>${localStorage.key(i)}</h3>
+          <br />
+        </div>
+        <div class="response--div">
+          <h3 class="prompts">Response:</h3>
+          <h3>${localStorage.getItem(localStorage.key(keyNum - 1))}</h3>
+        </div>
+      </li>`
+}
+
+function clearAnswers() {
+  localStorage.clear();
+  list.innerHTML = "";
+}
 
 function getStory() {
 
   let inputString = document.querySelector('textarea').value;
+
+  if (inputString === "") {
+    document.querySelector("textarea").placeholder = "Please ask a question or give me a request...";
+    return;
+  }
 
   const data = {
       prompt: `${inputString}`,
@@ -24,14 +56,9 @@ function getStory() {
    .then(res => res.json())
    .then(data => {
     console.log(data)
-    // let li = document.createElement('li');  
-    // document.querySelector('ul').appendChild(li);
-    // li.innerHTML =  <div>
-    //                   <h3>`Prompt: ${inputString}`</h3>
-    //                   <h3>`Response: ${data.choices[0].text}`</h3>
-    //                 </div>
     const list = document.getElementById("list");
-    list.innerHTML += 
+    
+    inputString ? list.innerHTML += 
       `<li>
         <div class="prompt--div">
           <h3 class="prompts">Prompt:</h3>
@@ -41,10 +68,12 @@ function getStory() {
           <h3 class="prompts">Response:</h3>
           <h3>${data.choices[0].text}</h3>
         </div>
-      </li>`;
-                      
+      </li>` : "";
+      const response = `${data.choices[0].text}`;
+      localStorage.setItem(inputString, response)
       })
    .catch(error => {
    console.log(error)
    });
 }
+
