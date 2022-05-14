@@ -23,8 +23,26 @@ function getStory() {
    })
    .then(res => res.json())
    .then(data => {
-    console.log(data)  
-    document.querySelector("ul").innerText = data.choices[0].text
+    console.log(data)
+    // let li = document.createElement('li');  
+    // document.querySelector('ul').appendChild(li);
+    // li.innerHTML =  <div>
+    //                   <h3>`Prompt: ${inputString}`</h3>
+    //                   <h3>`Response: ${data.choices[0].text}`</h3>
+    //                 </div>
+    const list = document.getElementById("list");
+    list.innerHTML += 
+      `<li>
+        <div class="prompt--div">
+          <h3 class="prompts">Prompt:</h3>
+          <h3>${inputString}</h3><br />
+        </div>
+        <div class="response--div">
+          <h3 class="prompts">Response:</h3>
+          <h3>${data.choices[0].text}</h3>
+        </div>
+      </li>`;
+                      
       })
    .catch(error => {
    console.log(error)

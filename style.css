@@ -2,18 +2,20 @@ body {
     margin: 0;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 2rem;
     font-family: Helvetica, sans-serif;
     background: white;
 }
 
 button {
-     margin-top: 1rem;
+     margin: 2rem;
      font-family: Helvetica, sans-serif;
      font-size: 1.2rem;
      font-weight: 700;
      padding: 0.5rem 2rem;
      border-radius: 20px;
+     background: black;
+     color: white;
 }
 
 ::-webkit-input-placeholder, ::-moz-placeholder, ::-ms-input-placeholder, ::-moz-placeholder {
@@ -31,9 +33,19 @@ button {
   }
 
   ul {
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: 600;
-      line-height: 2.5rem;
+      line-height: 1.5rem;
+  }
+
+  li {
+      background-color: rgb(226, 226, 226);
+      border-radius: 5px;
+      padding: 2rem;
+      text-align: left;
+      list-style-type: none;
+      margin: 2rem auto;
+      max-width: 60%;
   }
 
   .content {
@@ -46,7 +58,24 @@ button {
       font-size: 1.2rem;
   }
 
+  h3 {
+      margin: 0;
+  }
 
+  .prompts {
+      min-width: 10rem;
+  }
+
+  .prompt--div {
+      width: 100%;
+      display: flex;
+      margin-bottom: 2rem;
+  }
+
+  .response--div {
+    width: 100%;
+    display: flex;
+}
 
 
 
