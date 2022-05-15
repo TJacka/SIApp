@@ -86,7 +86,9 @@ function getStory() {
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
   };
-
+  
+  const OPENAI_API_KEY = process.env.OPENAI_API_KEY
+   
   fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
    method: "POST",
    headers: {
