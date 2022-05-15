@@ -6,24 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ask AI App</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
   <main class="content">
     <div class="heading">
-      <h1>Hey AI, I...</h1>
+      <h1>AI, I...</h1>
       <div class="dropdown">
         <button class="dropdown">Query Type</button>
         <div class="dropdown-content">
-          <a href="#">Question & Answer</a>
-          <a href="#">Grammar Correction</a>
-          <a href="#">2nd Grade Summary</a>
-          <a href="#">Get Keywords</a>
-          <a href="#">List Books</a>
-          <a href="#">Create Study Notes</a>
+          <a href="#" id="grammar">Grammar Correction</a>
+          <a href="#" id="secondgrade">2nd Grade Summary</a>
+          <a href="#" id="studynotes">Create Study Notes</a>
+          <a href="#" id="Q&A">Question & Answer</a>
+          <a href="#" id="getkeywords">Get Keywords</a>
+          <a href="#" id="books">Book Lister</a>
         </div>
       </div>
     </div>
-    <textarea type="text" name="" value="" rows="3" cols="65" placeholder="Ask a question or submit a request (eg. When will the singularity occur?)"></textarea>
+    <textarea type="text" name="" value="" rows="3" cols="65" placeholder="Ask me anything, or select another query type..."></textarea>
     <br/>
     <button type="button" name="button" id="submit">Submit</button>
     <button type="button" name="clear" id="clear">Clear</button>

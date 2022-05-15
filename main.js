@@ -2,6 +2,12 @@ document.getElementById('submit').addEventListener('click', getStory);
 document.getElementById('submit').addEventListener('mouseout', clearPlaceholder);
 document.getElementById('clear').addEventListener('click', clearAnswers);
 document.querySelector("h2").style.display = "none";
+document.getElementById('Q&A').addEventListener('click', qa);
+document.getElementById('grammar').addEventListener('click', grammar);
+document.getElementById('secondgrade').addEventListener('click', secondgrade);
+document.getElementById('getkeywords').addEventListener('click', getkeywords);
+document.getElementById('books').addEventListener('click', books);
+document.getElementById('studynotes').addEventListener('click', studynotes);
 
 let keyNum = 0;
 let valueNum = 0;
@@ -26,8 +32,33 @@ for (let i = 0; i < localStorage.length; i++) {
       </li>`
 }
 
-function clearPlaceholder() {
+function qa() {
   document.querySelector("textarea").placeholder = "Ask a question or submit a request (eg. When will the singularity occur?)";
+}
+
+function grammar() {
+  document.querySelector("textarea").placeholder = "Correct your grammar. (eg. Correct this to standard English:\
+  She no went to the market.)";
+}
+
+function secondgrade() {
+  document.querySelector("textarea").placeholder = "2nd grade summary (eg. Summarize this for a second-grade student:\ Jupiter is the fifth planet from the Sun and the largest in the Solar System.)";
+}
+
+function getkeywords() {
+  document.querySelector("textarea").placeholder = "Get keywords from text (eg. Extract keywords from this text:\ Black-on-black ware is a 20th- and 21st-century pottery tradition developed by the Puebloan Native American ceramic artists in Northern New Mexico.)";
+}
+
+function books() {
+  document.querySelector("textarea").placeholder = "Get a list of books by genre (eg. List 10 science fiction books:)";
+}
+
+function studynotes() {
+  document.querySelector("textarea").placeholder = "Make study notes on a specific subject (eg. What are 5 key points I should know when studying Ancient Rome?)";
+}
+
+function clearPlaceholder() {
+  document.querySelector("textarea").placeholder = "Ask me anything, or select another query type...";
 }
 
 function clearAnswers() {

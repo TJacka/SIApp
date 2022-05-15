@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Happy+Monkey&family=Inter:wght@400;600;700&family=Karla:wght@400;700&family=Open+Sans:wght@400;500;600;700;800&family=Orbitron:wght@400;800&family=Playfair+Display+SC:ital,wght@1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
 body {
     margin: 0;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: grey;
     color: white;
@@ -48,6 +50,10 @@ h1 {
     text-align: left;
     text-shadow: 0 0 3px black;
     color: white;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    margin: 0 0 0.8rem 0;
+
 }
 
 ul {
@@ -83,6 +89,7 @@ textarea {
     padding: 1rem;
     font-size: 1.1rem;
     font-weight: 500;
+    line-height: 1.8rem;
     width: 95%;
     min-height: 5rem;
     background: white;
@@ -104,10 +111,11 @@ h2 {
 h3 {
     margin: 0;
     font-weight: 400;
+    margin-right: 2rem;
 }
 
 .prompts {
-    min-width: 9rem;
+    min-width: 7rem;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -142,13 +150,14 @@ h3 {
     border-radius: 5px 5px 5px 50px;
     border: none;
     text-align: right;
+    width: 13rem;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: rgb(163, 163, 163);
-  min-width: 12rem;
+  min-width: 13rem;
   z-index: 1;
   text-align: right;
   border-radius: 0px 0px 0px 50px;
