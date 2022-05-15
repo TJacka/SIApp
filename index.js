@@ -8,7 +8,7 @@ document.getElementById('secondgrade').addEventListener('click', secondgrade);
 document.getElementById('getkeywords').addEventListener('click', getkeywords);
 document.getElementById('books').addEventListener('click', books);
 document.getElementById('studynotes').addEventListener('click', studynotes);
-
+import OPENAI_API_KEY from "./apikey";
 let keyNum = 0;
 let valueNum = 0;
 
@@ -67,8 +67,6 @@ function clearAnswers() {
   document.querySelector("h2").style.display = "none";
 }
 
-import OPENAI_API_KEY from "./apikey.js";
-
 function getStory() {
 
   let inputString = document.querySelector('textarea').value;
@@ -97,7 +95,7 @@ function getStory() {
    },
    body: JSON.stringify(data),
    }) 
-   
+
    .then(res => res.json())
    .then(data => {
     console.log(data)
