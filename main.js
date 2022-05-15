@@ -1,30 +1,33 @@
 document.getElementById('submit').addEventListener('click', getStory);
-document.getElementById('clear').addEventListener('click', clearAnswers);
 document.getElementById('submit').addEventListener('mouseout', clearPlaceholder);
-
-  function clearPlaceholder() {
-    document.querySelector("textarea").placeholder = "Ask a question or submit a request (eg. When will the singularity occur?)";
-  }
+document.getElementById('clear').addEventListener('click', clearAnswers);
+document.querySelector("h2").style.display = "none";
 
 let keyNum = 0;
 let valueNum = 0;
 
-for (let i = localStorage.length; i < localStorage.length; i--) {
+for (let i = 0; i < localStorage.length; i++) {
   console.log(localStorage.getItem(localStorage.key(i)))
-  keyNum--;
+  keyNum++;
 
+  const list = document.getElementById("list");
+  document.querySelector("h2").style.display = "block";
   list.innerHTML += 
       `<li>
         <div class="prompt--div">
-          <h3 class="prompts prompt">Prompt:</h3>
-          <h3 class="response">${localStorage.key(i)}</h3>
+          <h3 class="prompts">Prompt:</h3>
+          <h3>${localStorage.key(i)}</h3>
           <br />
         </div>
         <div class="response--div">
-          <h3 class="prompts prompt">Response:</h3>
-          <h3 class="response">${localStorage.getItem(localStorage.key(keyNum - 1))}</h3>
+          <h3 class="prompts">Response:</h3>
+          <h3>${localStorage.getItem(localStorage.key(keyNum - 1))}</h3>
         </div>
       </li>`
+}
+
+function clearPlaceholder() {
+  document.querySelector("textarea").placeholder = "Ask a question or submit a request (eg. When will the singularity occur?)";
 }
 
 function clearAnswers() {
