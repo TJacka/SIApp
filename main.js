@@ -91,7 +91,7 @@ function getStory() {
    method: "POST",
    headers: {
      "Content-Type": "application/json",
-     Authorization: `Bearer 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`,
+     Authorization: `Bearer OPENAI_API_KEY`,
    },
    body: JSON.stringify(data),
    })
