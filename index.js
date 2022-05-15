@@ -8,7 +8,7 @@ document.getElementById('secondgrade').addEventListener('click', secondgrade);
 document.getElementById('getkeywords').addEventListener('click', getkeywords);
 document.getElementById('books').addEventListener('click', books);
 document.getElementById('studynotes').addEventListener('click', studynotes);
-import OPENAI_API_KEY from "./apikey";
+
 let keyNum = 0;
 let valueNum = 0;
 
