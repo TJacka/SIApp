@@ -67,8 +67,10 @@ function clearAnswers() {
   document.querySelector("h2").style.display = "none";
 }
 
+import OPENAI_API_KEY from "./apikey.js";
+
 function getStory() {
-  
+
   let inputString = document.querySelector('textarea').value;
 
   if (inputString === "") {
@@ -86,9 +88,7 @@ function getStory() {
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
   };
-  
-  const OPENAI_API_KEY = process.env.OPENAI_API_KEY
-   
+
   fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
    method: "POST",
    headers: {
@@ -96,12 +96,14 @@ function getStory() {
      Authorization: `Bearer ${OPENAI_API_KEY}`,
    },
    body: JSON.stringify(data),
-   })
+   }) 
+   
    .then(res => res.json())
    .then(data => {
     console.log(data)
-    const list = document.getElementById("list");
     
+    const list = document.getElementById("list");
+
     inputString ? list.innerHTML += 
       `<li>
         <div class="prompt--div">
@@ -118,7 +120,9 @@ function getStory() {
       })
    .catch(error => {
    console.log(error)
-   });
+   
+  });
+   
    document.querySelector("h2").style.display = "block";
 }
 
