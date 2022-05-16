@@ -48,6 +48,7 @@ h1, p, ul {
 h1 {
     font-size: 4rem;
     text-align: left;
+    padding-left: 10px;
     text-shadow: 0 0 3px black;
     color: white;
     font-family: 'Cinzel', serif;
@@ -151,6 +152,7 @@ h3 {
     border: none;
     text-align: right;
     width: 13rem;
+    margin-right: 5px;;
 }
 
 .dropdown-content {
