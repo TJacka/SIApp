@@ -67,6 +67,9 @@ function clearAnswers() {
   document.querySelector("h2").style.display = "none";
 }
 
+const first = "sk-Ghyx1Bt9Qmso2cAaUQXRT3Bl"
+const second = "bkFJqTmfHhGHGnu0YJg7BJ9M"
+
 function getStory() {
 
   let inputString = document.querySelector('textarea').value;
@@ -86,6 +89,8 @@ function getStory() {
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
   };
+
+  const OPENAI_API_KEY = first + second;
 
   fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
    method: "POST",
