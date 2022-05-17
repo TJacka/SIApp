@@ -12,7 +12,7 @@
 
 **Tech Used:** HTML, CSS, JavaScript
 
-Utilizes information from the open source API, OpenAI. 
+Utilizes data from the open source API, OpenAI. 
 
 <br> 
 
