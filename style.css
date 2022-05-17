@@ -11,11 +11,6 @@ body {
     background-size: cover;
 }
 
-.content {
-    margin: 0 auto;
-    max-width: 50%;
-}
-
 button {
      margin: 2rem;
      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -29,16 +24,11 @@ button {
      border: none;
 }
 
-::placeholder {
-    color: black;
-    opacity: 1; 
-    font-weight: 400;
-    font-size: 1.1rem;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-::-webkit-input-placeholder, ::-ms-input-placeholder, ::-moz-placeholder {
-    font-size: 2rem;
+button:hover {
+    background: rgb(231, 230, 230);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
 }
 
 h1, p, ul {
@@ -53,6 +43,19 @@ h1 {
     font-family: 'Cinzel', serif;
     font-weight: 900;
     margin: 0 0 0.8rem 0;
+}
+
+h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    text-shadow: 0 0 2px black;
+    display: none;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 400;
+    margin-right: 2rem;
 }
 
 ul {
@@ -79,11 +82,6 @@ li {
     box-sizing: border-box;
 }
 
-.content {
-    margin: 0 auto;
-    max-width: 50%;
-}
-
 textarea {
     padding: 1rem;
     font-size: 1.1rem;
@@ -100,17 +98,26 @@ textarea:hover {
     box-shadow: 0 0 5px black;
 }
 
-h2 {
-    text-align: left;
-    font-size: 2.5rem;
-    text-shadow: 0 0 2px black;
-    display: none;
+.content {
+    margin: 0 auto;
+    max-width: 50%;
 }
 
-h3 {
-    margin: 0;
+::placeholder {
+    color: black;
+    opacity: 1; 
     font-weight: 400;
-    margin-right: 2rem;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+::-webkit-input-placeholder, ::-ms-input-placeholder, ::-moz-placeholder {
+    font-size: 2rem;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 50%;
 }
 
 .prompts {
@@ -172,14 +179,13 @@ h3 {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  margin-bottom: 5px;
+  margin-top: 3px;
 }
 
 .dropdown-content a:hover {
     text-shadow: 0 0 3px black;
     background-color: rgb(108, 108, 108);
-    border-radius: 5px 5px 5px 50px;
-    
+    border-radius: 5px 5px 5px 50px
 }
 
 .dropdown-content a:active {
@@ -192,13 +198,6 @@ h3 {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-button:hover {
-    background: rgb(231, 230, 230);
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px black;
 }
 
 #submit:active, #clear:active {
@@ -236,8 +235,30 @@ button:hover {
         font-size: 5rem;
     }
 
-    .content {
-        max-width: 90%;
+    button {
+        width: 8rem;
+        margin: 1.2rem 1rem 0;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 3rem;
+    }
+    
+    h3 {
+        margin: 0 0 0 0;
+    }
+    
+    li {
+      border-radius: 5px;
+      padding: 1rem;
+      text-align: left;
+      list-style-type: none;
+      width: 90%;
+      margin-top: 0;
+      background: rgb(237, 237, 237);
+      color: black;
+      font-size: 0.8rem;
     }
 
     textarea {
@@ -246,50 +267,48 @@ button:hover {
         font-size: 1rem;
     }
 
+    button {
+        width: 8rem;
+        margin: 1.2rem 1rem 0;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+
     .heading {
         display: block;
     }
 
     .dropdown {
         margin-left: auto;
-        margin-bottom: 1rem;
-    }
-
-    button {
-        width: 8rem;
-        margin: 1.2rem 1rem 0;
+        margin-bottom: -1rem;
     }
 
     ::placeholder {
         font-size: 1rem;
       }
 
-      h2 {
-        text-align: center;
-        margin-top: 3rem;
-      }
-
-      h3 {
-          margin: 0 0 0 0;
-      }
-
-      li {
-        border-radius: 5px;
-        padding: 1rem;
-        text-align: left;
-        list-style-type: none;
-        width: 90%;
-        margin-top: 0;
-        background: rgb(237, 237, 237);
-        color: black;
-        font-size: 0.8rem;
-    }
-
     .prompts {
         min-width: 5rem;
         font-size: 0.9rem;
         font-weight: 600;
     }
+
+    .dropdown-content a {
+        margin-top: 0px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(163, 163, 163);
+        min-width: 13rem;
+        z-index: 1;
+        text-align: right;
+        border-radius: 0px 0px 0px 50px;
+        margin-top: 10px;
+      }
 }
 
 @media only screen and (max-width: 600px) {
@@ -307,20 +326,46 @@ button:hover {
         width: 100%;
     }
 
+    textarea {
+        width: 80%;
+        margin-top: -0.8rem;
+        font-size: 1rem;
+    }
+
     h1 {
         text-align: center;
         margin-top: -1.5rem;
         font-size: 5rem;
     }
 
-    .content {
-        max-width: 90%;
+    button {
+        width: 8rem;
+        margin: 1.2rem 1rem 0;
     }
 
-    textarea {
-        width: 80%;
-        margin-top: -0.8rem;
-        font-size: 1rem;
+    h2 {
+        text-align: center;
+        margin-top: 3rem;
+    }
+    
+    h3 {
+        margin: 0 0 0 0;
+    }
+    
+    li {
+      border-radius: 5px;
+      padding: 1rem;
+      text-align: left;
+      list-style-type: none;
+      width: 90%;
+      margin-top: 0;
+      background: rgb(237, 237, 237);
+      color: black;
+      font-size: 0.8rem;
+    }
+
+    .content {
+        max-width: 90%;
     }
 
     .heading {
@@ -332,35 +377,9 @@ button:hover {
         margin-bottom: 1rem;
     }
 
-    button {
-        width: 8rem;
-        margin: 1.2rem 1rem 0;
-    }
-
     ::placeholder {
         font-size: 1rem;
       }
-
-      h2 {
-        text-align: center;
-        margin-top: 3rem;
-      }
-
-      h3 {
-          margin: 0 0 0 0;
-      }
-
-      li {
-        border-radius: 5px;
-        padding: 1rem;
-        text-align: left;
-        list-style-type: none;
-        width: 90%;
-        margin-top: 0;
-        background: rgb(237, 237, 237);
-        color: black;
-        font-size: 0.8rem;
-    }
 
     .prompts {
         min-width: 5rem;

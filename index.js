@@ -58,7 +58,7 @@ function studynotes() {
 }
 
 function clearPlaceholder() {
-  document.querySelector("textarea").placeholder = "Ask me anything, or select another query type...";
+  document.querySelector("textarea").placeholder = "Ask AI anything, or select another query type...";
 }
 
 function clearAnswers() {
@@ -90,17 +90,16 @@ function getStory() {
       presence_penalty: 0.0,
   };
 
-  const OPENAI_API_KEY = first + second;
+  const CODE = first + second;
 
   fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
    method: "POST",
    headers: {
      "Content-Type": "application/json",
-     Authorization: `Bearer ${OPENAI_API_KEY}`,
+     Authorization: `Bearer ${CODE}`,
    },
    body: JSON.stringify(data),
    }) 
-
    .then(res => res.json())
    .then(data => {
     console.log(data)
@@ -128,4 +127,3 @@ function getStory() {
    
    document.querySelector("h2").style.display = "block";
 }
-
