@@ -5,7 +5,6 @@ body {
     box-sizing: border-box;
     text-align: center;
     padding-top: 1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background: grey;
     color: white;
     background-image: url('./images/aibg.jpg');
@@ -13,6 +12,7 @@ body {
 }
 
 .content {
+    margin: 0 auto;
     max-width: 50%;
 }
 
@@ -48,13 +48,11 @@ h1, p, ul {
 h1 {
     font-size: 4rem;
     text-align: left;
-    padding-left: 10px;
     text-shadow: 0 0 3px black;
     color: white;
     font-family: 'Cinzel', serif;
     font-weight: 900;
     margin: 0 0 0.8rem 0;
-
 }
 
 ul {
@@ -82,8 +80,8 @@ li {
 }
 
 .content {
-    width: 70%;
     margin: 0 auto;
+    max-width: 50%;
 }
 
 textarea {
@@ -91,7 +89,7 @@ textarea {
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.8rem;
-    width: 95%;
+    width: 48%;
     min-height: 5rem;
     background: white;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -141,6 +139,7 @@ h3 {
 
 .heading {
     display: flex;
+    flex-direction: row-reverse;
     align-items: top;
     justify-content: space-between;
     width: 100%;
@@ -152,7 +151,6 @@ h3 {
     border: none;
     text-align: right;
     width: 13rem;
-    margin-right: 5px;;
 }
 
 .dropdown-content {
@@ -216,3 +214,158 @@ button:hover {
 #clear {
     border-radius: 40px 5px 40px 5px;
 }
+
+@media only screen and (max-width: 840px) {
+    body {
+      background: rgb(68, 68, 68);
+      background-image: url('./images/aibg.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center 100%;
+      display: block;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: -1.5rem;
+        font-size: 5rem;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+
+    textarea {
+        width: 80%;
+        margin-top: -0.8rem;
+        font-size: 1rem;
+    }
+
+    .heading {
+        display: block;
+    }
+
+    .dropdown {
+        margin-left: auto;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 8rem;
+        margin: 1.2rem 1rem 0;
+    }
+
+    ::placeholder {
+        font-size: 1rem;
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      h3 {
+          margin: 0 0 0 0;
+      }
+
+      li {
+        border-radius: 5px;
+        padding: 1rem;
+        text-align: left;
+        list-style-type: none;
+        width: 90%;
+        margin-top: 0;
+        background: rgb(237, 237, 237);
+        color: black;
+        font-size: 0.8rem;
+    }
+
+    .prompts {
+        min-width: 5rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background: rgb(68, 68, 68);
+      background-image: url('./images/aibg.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center 100%;
+      display: block;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: -1.5rem;
+        font-size: 5rem;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+
+    textarea {
+        width: 80%;
+        margin-top: -0.8rem;
+        font-size: 1rem;
+    }
+
+    .heading {
+        display: block;
+    }
+
+    .dropdown {
+        margin-left: auto;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 8rem;
+        margin: 1.2rem 1rem 0;
+    }
+
+    ::placeholder {
+        font-size: 1rem;
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      h3 {
+          margin: 0 0 0 0;
+      }
+
+      li {
+        border-radius: 5px;
+        padding: 1rem;
+        text-align: left;
+        list-style-type: none;
+        width: 90%;
+        margin-top: 0;
+        background: rgb(237, 237, 237);
+        color: black;
+        font-size: 0.8rem;
+    }
+
+    .prompts {
+        min-width: 5rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
