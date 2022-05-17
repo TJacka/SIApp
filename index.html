@@ -11,25 +11,25 @@
   <section class="content">
     <header class="heading">
       <nav class="dropdown">
-        <button class="dropdown">Query Type</button>
-        <ul class="dropdown-content">
+        <button class="querybtn" id="querybtn" >Query Type</button>
+        <div class="dropdown-content">
           <a href="#" id="grammar">Grammar Correction</a>
           <a href="#" id="secondgrade">2nd Grade Summary</a>
           <a href="#" id="studynotes">Create Study Notes</a>
           <a href="#" id="Q&A">Question & Answer</a>
           <a href="#" id="getkeywords">Get Keywords</a>
           <a href="#" id="books">Book Lister</a>
-        </ul>
+        </div>
       </nav>
       <h1>AI, I...</h1>
     </header>  
     </main class="content">
-      <textarea type="text" name="" value="" rows="4" placeholder="Ask AI anything, or select another query type..."></textarea>
+      <textarea class="inputarea" type="text" name="" value="" rows="4" placeholder="Ask AI anything, or select another query type..."></textarea>
       <br/>
-      <button type="button" name="button" id="submit">Submit</button>
-      <button type="button" name="clear" id="clear">Clear</button>
+      <button class="submitbtn" type="button" name="button" id="submit">Submit</button>
+      <button class="clearbtn" type="button" name="clear" id="clear">Clear</button>
       <h2 id="spoken">AI has spoken:</h2>
-      <ul id="list">
+      <ul class="responseslist" id="list">
       </ul>
     </main>
   </section>

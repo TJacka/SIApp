@@ -1,6 +1,7 @@
 document.getElementById('submit').addEventListener('click', getStory);
 document.getElementById('submit').addEventListener('mouseout', clearPlaceholder);
 document.getElementById('clear').addEventListener('click', clearAnswers);
+document.getElementById('clear').addEventListener('click', defaultQuery);
 document.querySelector("h2").style.display = "none";
 document.getElementById('Q&A').addEventListener('click', qa);
 document.getElementById('grammar').addEventListener('click', grammar);
@@ -8,6 +9,7 @@ document.getElementById('secondgrade').addEventListener('click', secondgrade);
 document.getElementById('getkeywords').addEventListener('click', getkeywords);
 document.getElementById('books').addEventListener('click', books);
 document.getElementById('studynotes').addEventListener('click', studynotes);
+document.getElementById('querybtn').addEventListener('click', defaultQuery);
 
 let keyNum = 0;
 
@@ -29,6 +31,10 @@ for (let i = 0; i < localStorage.length; i++) {
           <h3>${localStorage.getItem(localStorage.key(keyNum - 1))}</h3>
         </div>
       </li>`
+}
+
+function defaultQuery() {
+  document.querySelector("textarea").placeholder = "Ask AI anything, or select another query type...";
 }
 
 function qa() {
