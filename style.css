@@ -22,7 +22,7 @@ h1 {
     color: white;
     font-family: 'Cinzel', serif;
     font-weight: 900;
-    margin: 0.3rem 0 0.8rem 0;
+    margin: -1rem 0 0.6rem 0;
 }
 
 h2 {
@@ -131,6 +131,7 @@ li {
     align-items: top;
     justify-content: space-between;
     width: 100%;
+    margin-top: 1.2rem;
 }
 
 .querybtn {
@@ -149,6 +150,11 @@ li {
     background: rgb(231, 230, 230);
     font-weight: 600;
     cursor: pointer;
+    box-shadow: 0 0 5px black;
+}
+
+.querybtn:hover {
+    box-shadow: none;
 }
 
 .dropdown-content {
@@ -232,28 +238,15 @@ li {
       display: block;
     }
 
-    header {
-        width: 100%;
-    }
-
     h1 {
         text-align: center;
-        margin-top: -1.5rem;
+        margin: 2rem 2.4rem 3rem;
         font-size: 5rem;
-    }
-
-    button {
-        width: 8rem;
-        margin: 1.2rem 1rem 0;
     }
 
     h2 {
         text-align: center;
         margin-top: 3rem;
-    }
-    
-    h3 {
-        margin: 0 0 0 0;
     }
     
     li {
@@ -268,28 +261,15 @@ li {
       font-size: 0.8rem;
     }
 
-    textarea {
+    .inputarea {
         width: 90%;
         margin-top: -0.8rem;
+        margin-bottom: 1rem;
         font-size: 1rem;
-    }
-
-    button {
-        width: 8rem;
-        margin: 1.2rem 1rem 0;
     }
 
     .content {
         max-width: 90%;
-    }
-
-    .heading {
-        display: block;
-    }
-
-    .dropdown {
-        margin-left: auto;
-        margin-bottom: -1rem;
     }
 
     ::placeholder {
@@ -302,20 +282,24 @@ li {
         font-weight: 600;
     }
 
-    .dropdown-content a {
-        margin-top: 0px;
-      }
+    .dropdown {
+        text-align: right;
+        margin-bottom: -1rem;
+    }
 
-      .dropdown-content {
+    .dropdown-content {
         display: none;
         position: absolute;
-        background-color: rgb(163, 163, 163);
+        background: rgb(68, 68, 68);
         min-width: 13rem;
         z-index: 1;
         text-align: right;
         border-radius: 0px 0px 0px 50px;
-        margin-top: 10px;
-      }
+    }
+
+    .dropdown-content a {
+        margin-top: 0px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -327,28 +311,14 @@ li {
       background-attachment: fixed;
       background-position: center 100%;
       display: block;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    textarea {
-        width: 95%;
-        margin-top: -0.8rem;
-        font-size: 1rem;
-        margin-bottom: 0.2rem;
+      overflow: scroll;
     }
 
     h1 {
-        text-align: center;
-        margin-top: -1.5rem;
-        font-size: 5rem;
-    }
-
-    button {
-        width: 8rem;
-        margin: 1.2rem 1rem 0;
+        text-align: left;
+        margin-top: 0rem;
+        font-size: 4rem;
+        margin-left: 1rem;
     }
 
     h2 {
@@ -372,17 +342,22 @@ li {
       font-size: 0.8rem;
     }
 
-    .content {
-        max-width: 90%;
+    .inputarea {
+        width: 95%;
+        margin-top: -2.4rem;
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
     }
 
     .heading {
         display: block;
+        margin: 0;
     }
 
     .dropdown {
-        margin-left: auto;
         margin-bottom: 1rem;
+        display: flex;
+        justify-content: end;
     }
 
     ::placeholder {
@@ -393,6 +368,11 @@ li {
         min-width: 5rem;
         font-size: 0.9rem;
         font-weight: 600;
+    }
+
+    .submitbtn, .clearbtn {
+        max-width: 8rem;
+        margin: 1.2rem 0.5rem 1rem;
     }
 }
 
