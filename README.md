@@ -4,15 +4,18 @@
      
 <a href="https://ibb.co/g42S9gs"><img src="https://i.ibb.co/wckSg6D/AIhero.jpg" alt="AIhero" border="0"></a>
 
+
 **Tech Used:** HTML, CSS, JavaScript
 
 Utilizes information from the open source API, OpenAI. 
+
 
 **Upgraded Features:**
 
 Prompt suggestions/presets 
 
 Storing answers in local storage
+
 
 **Future Optimizations**
 
