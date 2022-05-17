@@ -10,7 +10,6 @@ document.getElementById('books').addEventListener('click', books);
 document.getElementById('studynotes').addEventListener('click', studynotes);
 
 let keyNum = 0;
-let valueNum = 0;
 
 for (let i = 0; i < localStorage.length; i++) {
   console.log(localStorage.getItem(localStorage.key(i)))
@@ -122,7 +121,6 @@ function getStory() {
       })
    .catch(error => {
    console.log(error)
-   
   });
    
    document.querySelector("h2").style.display = "block";

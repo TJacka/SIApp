@@ -8,33 +8,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="content">
-  <header>
-    <div class="heading">
-      <div class="dropdown">
+  <section class="content">
+    <header class="heading">
+      <nav class="dropdown">
         <button class="dropdown">Query Type</button>
-        <div class="dropdown-content">
+        <ul class="dropdown-content">
           <a href="#" id="grammar">Grammar Correction</a>
           <a href="#" id="secondgrade">2nd Grade Summary</a>
           <a href="#" id="studynotes">Create Study Notes</a>
           <a href="#" id="Q&A">Question & Answer</a>
           <a href="#" id="getkeywords">Get Keywords</a>
           <a href="#" id="books">Book Lister</a>
-        </div>
-      </div>
+        </ul>
+      </nav>
       <h1>AI, I...</h1>
-    </div>
-  </header>  
-  </main class="content">
-    <textarea type="text" name="" value="" rows="4" placeholder="Ask AI anything, or select another query type..."></textarea>
-    <br/>
-    <button type="button" name="button" id="submit">Submit</button>
-    <button type="button" name="clear" id="clear">Clear</button>
-    <h2 id="spoken">AI has spoken:</h2>
-    <ul id="list">
-    </ul>
-  </main>
-  </div>
+    </header>  
+    </main class="content">
+      <textarea type="text" name="" value="" rows="4" placeholder="Ask AI anything, or select another query type..."></textarea>
+      <br/>
+      <button type="button" name="button" id="submit">Submit</button>
+      <button type="button" name="clear" id="clear">Clear</button>
+      <h2 id="spoken">AI has spoken:</h2>
+      <ul id="list">
+      </ul>
+    </main>
+  </section>
+
   <script type="module" src="index.js"></script>
 </body>
 </html>
