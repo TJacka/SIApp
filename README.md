@@ -1,6 +1,10 @@
 # Welcome To My Fun With AI App
 
+<br>
+
 **Link To Project:** https://tjacka.github.io/SIApp/
+
+<br>
      
 <a href="https://ibb.co/g42S9gs"><img src="https://i.ibb.co/wckSg6D/AIhero.jpg" alt="AIhero" border="0"></a>
 
@@ -14,15 +18,15 @@ Utilizes information from the open source API, OpenAI.
 
 **Upgraded Features:**
 
-Prompt suggestions/presets 
+- Prompt suggestions/presets 
 
-Storing answers in local storage
+- Storing answers in local storage
 
 <br>
 
 **Future Optimizations**
 
-Ordering responses from local storage after refreshing page 
+- Ordering responses from local storage after refreshing page 
 
-Populating prompt with query options upon click so that they don't have to be fully typed out
+- Populating prompt with query options upon click so that they don't have to be fully typed out
 
