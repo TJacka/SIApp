@@ -1,16 +1,22 @@
-# Welcome to My Fun with AI App
+# Welcome To My Fun With AI App
 
-**Link to project:** https://tjacka.github.io/SIApp/
+**Link To Project:** https://tjacka.github.io/SIApp/
      
 <a href="https://ibb.co/g42S9gs"><img src="https://i.ibb.co/wckSg6D/AIhero.jpg" alt="AIhero" border="0"></a>
 
-**Tech used:** HTML, CSS, JavaScript
+**Tech Used:** HTML, CSS, JavaScript
 
 Utilizes information from the open source API, OpenAI. 
 
-**Upgraded features:**
+**Upgraded Features:**
 
 Prompt suggestions/presets 
 
 Storing answers in local storage
+
+**Future Optimizations**
+
+Ordering responses from local storage after refreshing page 
+
+Populating prompt with query options upon click so that they don't have to be fully typed out
 
