@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="content">
+  <div class="content">
+  <header>
     <div class="heading">
       <div class="dropdown">
         <button class="dropdown">Query Type</button>
@@ -24,8 +25,8 @@
       <h1>AI, I...</h1>
     </div>
   </header>  
-  </main>
-    <textarea type="text" name="" value="" rows="4" cols="65" placeholder="Ask AI anything, or select another query type..."></textarea>
+  </main class="content">
+    <textarea type="text" name="" value="" rows="4" placeholder="Ask AI anything, or select another query type..."></textarea>
     <br/>
     <button type="button" name="button" id="submit">Submit</button>
     <button type="button" name="clear" id="clear">Clear</button>
@@ -33,6 +34,7 @@
     <ul id="list">
     </ul>
   </main>
+  </div>
   <script type="module" src="index.js"></script>
 </body>
 </html>

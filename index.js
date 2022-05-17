@@ -37,7 +37,7 @@ function qa() {
 }
 
 function grammar() {
-  document.querySelector("textarea").placeholder = "Correct your grammar. (eg. Correct this to standard English:\
+  document.querySelector("textarea").placeholder = "Correct your grammar (eg. Correct this to standard English:\
   She no went to the market.)";
 }
 
