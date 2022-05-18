@@ -241,13 +241,13 @@ li {
 
     h1 {
         text-align: center;
-        margin: 1rem 2.4rem 3rem;
+        margin: 2rem 2.4rem 3rem;
         font-size: 3.5rem;
     }
 
     h2 {
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 2rem 0rem 1rem;
     }
     
     li {
@@ -330,13 +330,13 @@ li {
 
     h1 {
         text-align: center;
-        margin-top: -1rem 0 1rem;
+        margin-top: 0rem;
         font-size: 2rem;
     }
 
     h2 {
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 2rem 0rem 1rem;
     }
     
     h3 {
