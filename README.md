@@ -16,11 +16,19 @@ Utilizes data from the open source API, OpenAI.
 
 <br> 
 
+**Standard Features:**
+
+- Responds with user prompts and responses (most recent at the top) 
+
+<br>
+
 **Upgraded Features:**
 
-- Prompt suggestions/presets 
-
 - Storing answers in local storage
+
+- Clear responses from local storage button
+
+- Prompt suggestions dropdown
 
 <br>
 
