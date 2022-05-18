@@ -1,4 +1,4 @@
-# Welcome To My Fun With AI App
+# Welcome To My "Fun With AI" App
 
 <br>
 
@@ -30,3 +30,6 @@ Utilizes data from the open source API, OpenAI.
 
 - Populating prompt with query options upon click so that they don't have to be fully typed out
 
+<br>
+
+Image courtesy of pexels.com
