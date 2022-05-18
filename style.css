@@ -71,7 +71,7 @@ li {
     min-height: 5rem;
     background: white;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 50px 50px 1000px 50px;
+    border-radius: 5px 5px 5px 5px;
     box-sizing: border-box;
 }
 
@@ -200,7 +200,7 @@ li {
     box-shadow: none;
 }
 
-.submit:active, .clear:active {
+.submitbtn:active, .clearbtn:active {
     background: rgb(212, 212, 212);
     cursor: pointer;
     box-shadow: 0px 0px 2px black;
@@ -208,23 +208,19 @@ li {
 
 .submitbtn, .clearbtn {
     margin: 2rem;
-     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-     font-size: 1.2rem;
-     font-weight: 600;
-     padding: 0.5rem 2rem;
-     border-radius: 20px;
-     background: white;
-     color: black;
-     width: 12rem;
-     border: none;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    width: 12rem;
+    border: none;
 }
 
-.submitbtn {
-    border-radius: 40px 5px 40px 5px;
-}
-
-.clearbtn {
-    border-radius: 40px 5px 40px 5px;
+.submitbtn, .clearbtn {
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 840px) {
@@ -358,6 +354,7 @@ li {
         margin-bottom: 1rem;
         display: flex;
         justify-content: end;
+        color: black;
     }
 
     ::placeholder {
@@ -371,8 +368,9 @@ li {
     }
 
     .submitbtn, .clearbtn {
-        max-width: 8rem;
+        max-width: 7rem;
         margin: 1.2rem 0.5rem 1rem;
+        padding: 0.5rem 0;
     }
 }
 
