@@ -38,15 +38,7 @@ Utilizes data from the open source API, OpenAI.
 
 - Clear responses from local storage button
 
-- Prompt suggestions dropdown
-
-<br>
-
-**Future Optimizations**
-
-- Ordering responses from local storage after refreshing page 
-
-- Populating prompt with query options upon click so that they don't have to be fully typed out
+- Prompt suggestions dropdow
 
 <br>
 
