@@ -34,7 +34,7 @@ for (let i = 0; i < localStorage.length; i++) {
 }
 
 function defaultQuery() {
-  document.querySelector("textarea").placeholder = "Ask AI anything, or select another query type...";
+  document.querySelector("textarea").placeholder = "Ask AI anything, or select another prompt type...";
 }
 
 function qa() {
