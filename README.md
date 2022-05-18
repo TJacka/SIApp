@@ -2,11 +2,21 @@
 
 <br>
 
+
+Use this app to ask artificial intelligence a question or choose from several different prompt types. 
+
+<br>
+
+
+Built for Shopify's Frontend Developer Intern Challenge - Fall 2022.
+
+<br>
+
 **Link To Project:** https://tjacka.github.io/SIApp/
 
 <br>
-     
-<a href="https://ibb.co/g42S9gs"><img src="https://i.ibb.co/wckSg6D/AIhero.jpg" alt="AIhero" border="0"></a>
+
+<img src="https://i.ibb.co/HXV9ckx/funwithai.jpg" alt="funwithai" border="0">
 
 <br>
 
