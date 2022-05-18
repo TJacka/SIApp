@@ -36,9 +36,7 @@ Utilizes data from the open source API, OpenAI.
 
 - Storing answers in local storage
 
-- Clear responses from local storage button
-
-- Prompt suggestions dropdow
+- Prompt suggestions dropdown
 
 <br>
 
