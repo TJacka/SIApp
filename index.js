@@ -5,10 +5,10 @@ document.getElementById('clear').addEventListener('click', defaultQuery);
 document.querySelector("h2").style.display = "none";
 document.getElementById('Q&A').addEventListener('click', qa);
 document.getElementById('grammar').addEventListener('click', grammar);
-document.getElementById('secondgrade').addEventListener('click', secondgrade);
-document.getElementById('getkeywords').addEventListener('click', getkeywords);
+document.getElementById('secondgrade').addEventListener('click', secondGrade);
+document.getElementById('getkeywords').addEventListener('click', getKeyWords);
 document.getElementById('books').addEventListener('click', books);
-document.getElementById('studynotes').addEventListener('click', studynotes);
+document.getElementById('studynotes').addEventListener('click', studyNotes);
 document.getElementById('querybtn').addEventListener('click', defaultQuery);
 
 let keyNum = 0;
@@ -46,11 +46,11 @@ function grammar() {
   She no went to the market.)";
 }
 
-function secondgrade() {
+function secondGrade() {
   document.querySelector("textarea").placeholder = "2nd grade summary (eg. Summarize this for a second-grade student:\ Jupiter is the fifth planet from the Sun and the largest in the Solar System.)";
 }
 
-function getkeywords() {
+function getKeyWords() {
   document.querySelector("textarea").placeholder = "Get keywords from text (eg. Extract keywords from this text:\ Black-on-black ware is a 20th- and 21st-century pottery tradition developed by the Puebloan Native American ceramic artists in Northern New Mexico.)";
 }
 
@@ -58,7 +58,7 @@ function books() {
   document.querySelector("textarea").placeholder = "Get a list of books by genre (eg. List 10 science fiction books:)";
 }
 
-function studynotes() {
+function studyNotes() {
   document.querySelector("textarea").placeholder = "Make study notes on a specific subject (eg. What are 5 key points I should know when studying Ancient Rome?)";
 }
 
