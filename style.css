@@ -308,6 +308,12 @@ li {
     .querybtn {
         color: black;
     }
+
+    .submitbtn, .clearbtn {
+        max-width: 7rem;
+        margin: 0.5rem 0.5rem 1rem;
+        padding: 0.5rem 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
