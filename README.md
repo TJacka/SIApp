@@ -15,8 +15,8 @@ Built for Shopify's Frontend Developer Intern Challenge - Fall 2022.
 **Link To Project:** https://tjacka.github.io/SIApp/
 
 <br>
-     
-<img src="https://i.ibb.co/HXV9ckx/funwithai.jpg" alt="funwithai" border="0">
+
+<a href="https://ibb.co/N7sG0Hm"><img src="https://i.ibb.co/HXV9ckx/funwithai.jpg" alt="funwithai" border="0"></a>
 
 <br>
 
