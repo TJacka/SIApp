@@ -63,7 +63,7 @@ function studynotes() {
 }
 
 function clearPlaceholder() {
-  document.querySelector("textarea").placeholder = "Ask AI anything, or select another query type...";
+  document.querySelector("textarea").placeholder = "Ask AI anything, or select another prompt type...";
 }
 
 function clearAnswers() {
