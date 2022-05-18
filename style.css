@@ -358,11 +358,14 @@ li {
         margin: 0;
     }
 
+    .querybtn {
+        color: black;
+    }
+
     .dropdown {
         margin-bottom: 1rem;
         display: flex;
         justify-content: end;
-        color: black;
     }
 
     ::placeholder {
