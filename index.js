@@ -41,6 +41,7 @@ function qa() {
   document.querySelector("textarea").placeholder = "Ask a question or submit a request (eg. When will the singularity occur?)";
 }
 
+
 function grammar() {
   document.querySelector("textarea").placeholder = "Correct your grammar (eg. Correct this to standard English:\
   She no went to the market.)";
