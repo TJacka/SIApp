@@ -7,11 +7,6 @@ Use this app to ask artificial intelligence a question or choose from several di
 
 <br>
 
-
-Built for Shopify's Frontend Developer Intern Challenge - Fall 2022.
-
-<br>
-
 **Link To Project:** https://tjacka.github.io/SIApp/
 
 <br>
@@ -40,6 +35,6 @@ Utilizes data from the open source API, OpenAI.
 
 <br>
 
-Project by Thomas Jacka. Image courtesy of pexels.com.
+Created by Thomas Jacka. Image courtesy of pexels.com.
 
 
