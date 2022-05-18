@@ -16,7 +16,7 @@ Built for Shopify's Frontend Developer Intern Challenge - Fall 2022.
 
 <br>
 
-<a href="https://ibb.co/N7sG0Hm"><img src="https://i.ibb.co/HXV9ckx/funwithai.jpg" alt="funwithai" border="0"></a>
+<img src="https://i.ibb.co/HXV9ckx/funwithai.jpg" alt="funwithai" border="0">
 
 <br>
 
