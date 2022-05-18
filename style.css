@@ -241,7 +241,7 @@ li {
 
     h1 {
         text-align: center;
-        margin: 2rem 2.4rem 3rem;
+        margin: 1rem 2.4rem 3rem;
         font-size: 3.5rem;
     }
 
@@ -330,7 +330,7 @@ li {
 
     h1 {
         text-align: center;
-        margin-top: 0rem;
+        margin-top: -1rem 0 1rem;
         font-size: 2rem;
     }
 
