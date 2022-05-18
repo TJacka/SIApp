@@ -42,13 +42,13 @@ li {
     background-color: rgb(30, 29, 29);
     border-radius: 5px;
     padding: 2rem;
-    padding-right: 5rem;
+    padding-right: 1rem;
     text-align: left;
     list-style-type: none;
     margin: 1rem auto;
     width: 100%;
     color: white;
-    border-radius: 10px 10px 300px 10px;
+    border-radius: 10px 10px 10px 10px;
     box-sizing: border-box;
 }
 
