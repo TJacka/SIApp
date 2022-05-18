@@ -294,7 +294,7 @@ li {
         min-width: 13rem;
         z-index: 1;
         text-align: right;
-        border-radius: 0px 0px 0px 50px;
+        border-radius: 4px 4px 4px 50px;
     }
 
     .dropdown-content a {
@@ -308,8 +308,8 @@ li {
 
 @media only screen and (max-width: 600px) {
     body {
-      background: rgb(68, 68, 68);
-      background-image: url('./images/aibg.jpg');
+      background: rgb(132, 132, 132);
+      /* background-image: url('./images/aibg.jpg'); */
       background-size: 100%;
       background-repeat: no-repeat;
       background-attachment: fixed;
