@@ -1,6 +1,14 @@
 # Welcome To My "Fun With AI" App
 
-Use this app to ask artificial intelligence a question or choose from several different prompt types. Built for Shopify's Frontend Developer Intern Challenge - Fall 2022.
+<br>
+
+
+Use this app to ask artificial intelligence a question or choose from several different prompt types. 
+
+<br>
+
+
+Built for Shopify's Frontend Developer Intern Challenge - Fall 2022.
 
 <br>
 
