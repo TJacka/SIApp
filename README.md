@@ -50,4 +50,6 @@ Utilizes data from the open source API, OpenAI.
 
 <br>
 
-Image courtesy of pexels.com
+Project by Thomas Jacka. Image courtesy of pexels.com.
+
+
