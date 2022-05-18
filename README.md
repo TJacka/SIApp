@@ -1,5 +1,7 @@
 # Welcome To My "Fun With AI" App
 
+Use this app to ask artificial intelligence a question or choose from several different prompt types. Built for Shopify's Frontend Developer Intern Challenge - Fall 2022.
+
 <br>
 
 **Link To Project:** https://tjacka.github.io/SIApp/
