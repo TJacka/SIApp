@@ -34,11 +34,4 @@ Storing answers in local storage
 
 Prompt suggestions dropdown
 
-<br>
-
-</div>
-
-<div align="right">
-Created by Thomas Jacka. <br>
-Image courtesy of pexels.com.
 </div>
