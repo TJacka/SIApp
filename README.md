@@ -2,8 +2,6 @@
 
 # Welcome To My "Fun With AI" App
 
-<br>
-
 ### Use this app to ask artificial intelligence a question or choose from several different prompt types. 
 
 <br>
