@@ -36,7 +36,6 @@ Prompt suggestions dropdown
 
 <br>
 
-Created by Thomas Jacka. Image courtesy of pexels.com.
-
-
 </div>
+
+Created by Thomas Jacka. Image courtesy of pexels.com.
