@@ -4,7 +4,7 @@
 
 <br>
 
-Use this app to ask artificial intelligence a question or choose from several different prompt types. 
+### Use this app to ask artificial intelligence a question or choose from several different prompt types. 
 
 <br>
 
