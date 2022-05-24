@@ -1,7 +1,8 @@
+<div align="center">
+
 # Welcome To My "Fun With AI" App
 
 <br>
-
 
 Use this app to ask artificial intelligence a question or choose from several different prompt types. 
 
@@ -15,26 +16,29 @@ Use this app to ask artificial intelligence a question or choose from several di
 
 <br>
 
-**Tech Used:** HTML, CSS, JavaScript
+## Tech Used: 
+  
+HTML, CSS, JavaScript
 
 Utilizes data from the open source API, OpenAI. 
 
 <br> 
 
-**Standard Features:**
+## Standard Features:
 
-- Responds with user prompts and responses (most recent at the top) 
+Responds with user prompts and responses (most recent at the top) 
 
 <br>
 
-**Upgraded Features:**
+## Upgraded Features:
 
-- Storing answers in local storage
+Storing answers in local storage
 
-- Prompt suggestions dropdown
+Prompt suggestions dropdown
 
 <br>
 
 Created by Thomas Jacka. Image courtesy of pexels.com.
 
 
+</div>
