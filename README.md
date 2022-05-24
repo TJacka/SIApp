@@ -38,4 +38,6 @@ Prompt suggestions dropdown
 
 </div>
 
+<div align="right">
 Created by Thomas Jacka. Image courtesy of pexels.com.
+</div>
