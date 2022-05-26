@@ -6,7 +6,7 @@
 
 <br>
 
-**Link to live project:** https://tjacka.github.io/SIApp/
+  <a href="https://tjacka.github.io/SIApp/">Link to Live Project</a>
 
 <br>
 
